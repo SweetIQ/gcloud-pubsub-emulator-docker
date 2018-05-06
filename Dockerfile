@@ -9,10 +9,6 @@ RUN /root/google-cloud-sdk/bin/gcloud components install -q pubsub-emulator beta
 
 RUN mkdir /data
 
-ADD start-pubsub.sh /etc/start-pubsub
-
-RUN chmod +x /etc/start-pubsub
-
 CMD /root/google-cloud-sdk/bin/gcloud beta emulators pubsub start --data-dir /data --host-port "0.0.0.0:${HOST_PORT}"
 
 EXPOSE 8042
