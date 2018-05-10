@@ -6,7 +6,7 @@ PubSub emulator for Google Cloud
 -	[`198.0.0`, `198.0`, `198`, `latest` (*Dockerfile*)](https://github.com/SweetIQ/gcloud-pubsub-emulator-docker/blob/master/Dockerfile)
 
 ## How to use this image
-Ensure that the environment variable `PUBSUB_EMULATOR_HOST` where you are connecting to pub sub is set to the address of the emulator, and that PUBSUB_PROJECT_ID is set. =localhost:8085
+Ensure that the environment variable `PUBSUB_EMULATOR_HOST` where you are connecting to pub sub is set to the address of the emulator, and that PUBSUB_PROJECT_ID is set.
 e.g.
 ```bash
 export PUBSUB_EMULATOR_HOST=localhost:8085
